@@ -105,7 +105,7 @@ async function fetchData(type = "skills") {
     type === "skills" ?
         response = await fetch(" ")
         :
-        response = await fetch("./projects/projects.json")
+        response = await fetch(" ")
     const data = await response.json();
     return data;
 }
