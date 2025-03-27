@@ -918,7 +918,19 @@ header .navbar ul li a:hover {
 
 @media screen and (max-width: 768px) {
   .certificate-card {
-      width: calc(100% - 20px);  /* 1 card in a row for mobile */
+    padding: 0;
+    margin: 0;
+    width: calc(100% - 20px);  /* 2 cards in a row for tablets */
+  }
+  .certificates-container.certificate-card {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem;
+    padding: 2rem 0.2rem 2rem 0.2rem;
+    gap: 1rem;
+  }
+  .certificates-container{
+    margin-top: 5px;
+    width: 100%;
   }
 }
 
